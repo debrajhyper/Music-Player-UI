@@ -1,0 +1,108 @@
+.progressBar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #FFFFFF14;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+}
+
+.progressBar::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right, white calc(var(--value) / var(--max) * 100%), transparent 0);
+    border-radius: 4px;
+    transition: background 0.1s linear; 
+}
+
+.progressBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    /* Set width to 0 to hide the default thumb */
+    height: 0;
+    /* Set height to 0 to hide the default thumb */
+    border: none;
+    /* Remove any border */
+    background: none;
+    /* Remove any background */
+    cursor: pointer;
+    /* Disable cursor for the thumb area */
+    transition: transform 0.1s linear;
+}
+
+.progressBar::-webkit-slider-thumb::before {
+    content: '';
+    position: absolute;
+    width: calc((100% - 16px) * (var(--value) / var(--max)));
+    height: 8px;
+    background-color: white;
+    /* Fill color for the progress */
+    border-radius: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    /* Ensure it's behind the thumb */
+    transition: width 0.1s linear;
+}
+
+.progressBar:focus {
+    outline: none;
+}
+
+.progressBar::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right, white calc(var(--value) / var(--max) * 100%), transparent 0);
+    /* White gradient fill from left to right */
+    border-radius: 4px;
+    transition: background 0.1s linear;
+}
+
+.progressBar::-moz-range-thumb {
+    width: 0;
+    /* Set width to 0 to hide the default thumb */
+    height: 0;
+    /* Set height to 0 to hide the default thumb */
+    border: none;
+    /* Remove any border */
+    background: none;
+    /* Remove any background */
+    cursor: pointer;
+    /* Disable cursor for the thumb area */
+    transition: transform 0.1s linear;
+}
+
+.progressBar::-ms-track {
+    width: 100%;
+    height: 8px;
+    background-color: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+.progressBar::-ms-fill-lower {
+    background: linear-gradient(to right, white calc(var(--value) / var(--max) * 100%), transparent 0);
+    /* White gradient fill from left to right for lower fill in IE/Edge */
+}
+
+.progressBar::-ms-fill-upper {
+    background-color: #2d3748;
+    /* Upper fill color for IE/Edge */
+}
+
+.progressBar::-ms-thumb {
+    width: 0;
+    /* Set width to 0 to hide the default thumb */
+    height: 0;
+    /* Set height to 0 to hide the default thumb */
+    border: none;
+    /* Remove any border */
+    background: none;
+    /* Remove any background */
+    cursor: none;
+    /* Disable cursor for the thumb area */
+}
