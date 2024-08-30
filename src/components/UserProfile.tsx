@@ -11,9 +11,9 @@ import ProfileImg from '@Images/image.png';
  *   The image is rendered with a class name of w-full h-full select-none object-contain
  *   The image is not draggable
  */
-export function UserProfile({ width }: { width?: number | string }) {
+export function UserProfile({ width, ...props }: { width?: number | string, }) {
     return (
-        <div className={`w-${width} rounded-full`}>
+        <div className={`${width} rounded-full`} {...props}>
             <img
                 src={ProfileImg}
                 alt='profile'

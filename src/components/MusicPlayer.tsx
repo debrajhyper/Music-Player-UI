@@ -107,7 +107,7 @@ export function MusicPlayer() {
                 <button className='border-none bg-transparent outline-none cursor-pointer' onClick={() => setShowSideBar(true)}>
                     <img src={sidebarOpenImg} alt='sidebar' loading="lazy" className='w-fit h-8 text-white fill-white' draggable={false} />
                 </button>
-                <UserProfile width={10} />
+                <UserProfile width='w-10' />
             </div>
             {
                 /* If there is a current song, render the song information */
