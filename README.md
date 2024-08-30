@@ -4,7 +4,9 @@
 
 ## Project Overview
 
-    The Music Player UI is a web application that allows users to browse, search, and play music tracks. It features a responsive design, real-time background color changes, and seamless playback across different browser tabs.
+    The Music Player UI is a web application that allows users to browse, search, and play music tracks. 
+    It features a responsive design, real-time background color changes, and seamless playback across 
+    different browser tabs.
 
 <p align="center">
   <p>Initial loading & error fallback UI</p>
@@ -48,14 +50,14 @@
 
 The Music Player UI includes the following features:
 
-1. **Search**: Allow users to search for songs and artists
-2. **Music Control**: 
+1. [✔️] **Search**: Allow users to search for songs and artists
+2. [✔️] **Music Control**: 
    - Play/Pause
    - Next Track
    - Previous Track
    - Mute/Unmute
-3. **Tab Navigation**: Allow switching between `For You` and `Top Tracks` sections
-4. **Playback Control**: Implement a seeker to control music playback position
+3. [✔️] **Tab Navigation**: Allow switching between `For You` and `Top Tracks` sections
+4. [✔️] **Playback Control**: Implement a seeker to control music playback position
 
 ## Responsive Design
 
@@ -98,7 +100,12 @@ To set up the project locally:
     cd Music-Player-UI
    ```
 3. Install dependencies: `npm install`
-4. Start the development server: `npm run dev`
+4. Create a `.env` file in the root where package.json located and paste the api endpoints accordingly.
+    ```bash
+    VITE_API_SONGS_URL=https://cms.samespace.com/items/songs
+    VITE_API_SONG_COVER_IMG_URL=https://cms.samespace.com/assets/
+    ```
+6. Start the development server: `npm run dev`
 
 ## Build and Deployment
 
