@@ -2,12 +2,13 @@
 
 🌐 Website: [samespace-music-ui](https://samespace-music-ui.vercel.app/)
 
-## Project Overview
+## 🎁 Project Overview
 
     The Music Player UI is a web application that allows users to browse, search, and play music tracks. 
     It features a responsive design, real-time background color changes, and seamless playback across 
     different browser tabs.
 
+## 😍 UI Components
 <p align="center">
   <p>Initial loading & error fallback UI</p>
   <p>
@@ -26,7 +27,7 @@
   </p>
 </p>
 
-## Project Specifications
+## ⚡ Project Specifications
 
 ### Design
 - Figma Design Link: [Music Player UI Design](https://www.figma.com/file/RtKhzEeeuD2FtRsg2dxSep/Front-end-Assessment?type=design&node-id=1-2&mode=design&t=zEkwOdYyaeNx0z7m-4)
@@ -37,7 +38,7 @@
 
 **Note**: The API will return different titles, artists, cover images, and durations, but the URL for every song will be the same.
 
-## Technical Requirements
+## 🕹️ Technical Requirements
 
 1. **Framework**: React JS
 2. **API Integration**: Use REST API to load list data
@@ -46,7 +47,7 @@
 5. **Dynamic Styling**: Background gradient color changes based on the current song's cover image
 6. **Animations**: Implement fluid transitions and animations (e.g., list loading, background color change)
 
-## Functionality
+## ✅ Functionality
 
 The Music Player UI includes the following features:
 
@@ -59,12 +60,12 @@ The Music Player UI includes the following features:
 3. [✔️] **Tab Navigation**: Allow switching between `For You` and `Top Tracks` sections
 4. [✔️] **Playback Control**: Implement a seeker to control music playback position
 
-## Responsive Design
+## 🥤 Responsive Design
 
 - For smaller screens, the player component should be the main interface
 - Implement a menu button to show the list of songs on mobile devices in a sidebar.
 
-## User Interface
+## 🪄 User Interface
 
 1. **Song List**: Display a scrollable list of songs with cover art, title, artist, and duration
 2. **Now Playing**: Show currently playing song details and cover art
@@ -72,7 +73,7 @@ The Music Player UI includes the following features:
 4. **Search Bar**: Implement a search input for filtering songs
 5. **Tab Navigation**: Create tabs for `For You` and `Top Tracks` sections
 
-## Development Guidelines
+## 🫱🏻‍🫲🏽 Development Guidelines
 
 1. **Code Organization**: Use a modular approach with separate components for different UI elements
 2. **State Management**: Implement global state management for handling playback, current song, and UI states
@@ -82,12 +83,12 @@ The Music Player UI includes the following features:
 6. **Performance**: Optimize for performance, especially when handling large lists of songs
 7. **Accessibility**: Ensure the UI is accessible, with proper ARIA labels and keyboard navigation
 
-## Deployment
+## 📦 Deployment
 
 1. **Version Control**: Use Git for version control and submit the project as a GitHub repository
 2. **Hosting**: Deploy a working demo on Vercel.
 
-## Getting Started
+## 🗃️ Getting Started
 
 To set up the project locally:
 
@@ -107,7 +108,7 @@ To set up the project locally:
     ```
 6. Start the development server: `npm run dev`
 
-## Build and Deployment
+## 📦 Build and Deployment
 
 To build the project for production:
 
@@ -117,7 +118,7 @@ To build the project for production:
 For detailed instructions on deploying to Vercel, refer to their respective documentation.
 
 
-## Available Scripts
+## 📃 Available Scripts
 
 In the project directory, you can run the following scripts:
 
@@ -126,7 +127,7 @@ In the project directory, you can run the following scripts:
 - `npm run lint`: Runs ESLint to check for code quality and style issues.
 - `npm run preview`: Serves the production build locally for preview.
 
-## Development Tools
+## 🛠️ Development Tools
 
 The project utilizes these development tools:
 
@@ -138,7 +139,7 @@ The project utilizes these development tools:
 - `autoprefixer` (v10.4.20): A PostCSS plugin to parse CSS and add vendor prefixes to CSS rules.
 - `postcss` (v8.4.41): A tool for transforming CSS with JavaScript.
 
-## Additional Notes
+## 🧩 Additional Notes
 
 - The project uses SWC (Speedy Web Compiler) for faster compilation of React code.
 - ESLint is configured with plugins for React hooks and React refresh to ensure best practices and optimal performance.
