@@ -1,6 +1,6 @@
 # Music Player UI - Project Documentation
 
-🌐 Website: [samespace-music-ui](https://samespace-music-ui.vercel.app/)
+🌐 Website: [musicspace-ui](https://musicspace-ui.vercel.app/)
 
 ## 🎁 Project Overview
 
